@@ -1,14 +1,13 @@
-{
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "novap",
-  "compatibility_date": "2025-09-27",
-  "observability": {
-    "enabled": true
-  },
-  "assets": {
-    "directory": "Htmel"
-  },
-  "compatibility_flags": [
-    "nodejs_compat"
-  ]
-}
+name = "nova-proxy"
+main = "src/Nova System.js" # یا فایل اصلی پروژه
+compatibility_date = "2024-01-01"
+
+kv_namespaces = [
+  { binding = "KV", id = e4003038b994427f866c4de8242c171e" }
+]
+
+[vars]
+PASSWORD = "ApMp+1650"
+PROXYIP = "proxyip.novatest.net:443"
+ENABLE_ROUTING = "true"
+DOH_PROVIDER = "cloudflare"
